@@ -1,21 +1,33 @@
 # *Movie Ticket Booking usin HTML, CSS & JS*
 
-## Project Breakdown
 
+## **Description** :
+This is a simple to-do list application built with HTML, CSS, and JavaScript. This application allows users to add, delete, and mark tasks as completed.
+
+
+## Project Breakdown
+- ### **Home Page*
+   **Features** ⚙️
+- [x] **Search Bar** : Search movies by entering movie name on the input and click enter.
+- [x] **Movie Genere** : Select movie category on the buttons below the landing page. Click clear to clear selection.
+- [x] **Overview** : Hover above overview to see movie details.
+- [x] **See More** : Click _see more_ button to watch trailer.
+- [x] **Buy ticket** : Click _buy ticket button_ to go to the ticket booking page.
+
+- ### **BOOKING Page*
+   **Features** ⚙️
 - Display UI with movie select, screen, seats, legend & seat info
-- User can select a movie/price
-- User can select/deselect multiple seats
+- User can select/deselect multiple seats, the ticket price will be displayed according to number of seats selected.
 - User can't select occupied seats
-- Number of seats and price will update based on selected movie and no. of seats
+- Number of seats and price will update based on number of seats
 - Save seats, movie and price to local storage so that UI is still populated on refresh
+- select venue on **venue**
 
 ## prerequisites
 
     HTML
     CSS
-    JS BASICS
-
-# New Learning
+    JavaScript
 
 ## System Requirements
 
@@ -41,7 +53,7 @@ To use this repo, follow these steps:
 
 3.  Clone the repository by running the following command:
 
-        git clone https://github.com/oyieroyier/deploying_a_local_server.git
+        git clone https://github.com/markkamau254/Code-Challenge-3.git
 
 4.  Change directory to the repo folder:
 
@@ -61,5 +73,10 @@ To use this repo, follow these steps:
 
 - Remember to replace your username when cloning.
 
-      git clone 
+      git clone https://github.com/markkamau254/Code-Challenge-3.git
 
+  
+## **You can check the deployed website by clicking the live link below** 👇 
+[Sopping List](  
+## **You can check the deployed website by clicking the live link below** 👇 
+[Sopping List](https://markkamau254.github.io/Code-Challenge-3/)
