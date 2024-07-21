@@ -253,7 +253,7 @@ function showMovies(data) {
 
                         
                         <button id="butt">
-                            <a href="https://markkamau254.github.io/Booking-Page/">Book Ticket</a>
+                            <a href="https://jiji.co.ke/zimmerman/dogs-and-puppies">Book Ticket</a>
                             <div class="icon-1">
                             <svg
                                 xmlns:xlink="http://www.w3.org/1999/xlink"
