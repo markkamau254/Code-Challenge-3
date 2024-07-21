@@ -6,7 +6,7 @@
 
 body{
     height: fit-content;
-    background-color: whitesmoke;
+    background-color: white;
    
 }
 
@@ -282,6 +282,9 @@ iframe{
     font-weight: bold;
     padding-bottom: 40px;
     color: #c4c4c4;
+    position: relative;
+    top: -525px;
+    left: +25px;
 }
 
 
@@ -305,6 +308,7 @@ iframe{
  .container {
    position: relative;
    left: +5px;
+   top: -550px;
    display: flex;
    align-items: left;
    justify-content: left;
@@ -615,12 +619,6 @@ input {
   border: none;
   cursor: pointer;
 }
-
-
-
-
-
-
 
 
 
@@ -949,9 +947,6 @@ input {
 
 
 
-
-
-
   /*================================================== TAIL =================================================*/
   .tail{
     width: 100%;
@@ -1135,8 +1130,6 @@ input {
     font-size: 18px;
   }
 
-
-
   .bunch-four ul li{
     color: white;
     font-size: 18px;
@@ -1157,7 +1150,7 @@ input {
 
 #bolt{
   position: relative;
-  top: +10px;
+  top: +15px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1284,9 +1277,6 @@ input {
 }
 
 
-
-
-
 @-webkit-keyframes spinrevert {
   from {
       -webkit-transform: rotateY(0deg);
@@ -1312,9 +1302,22 @@ input {
 
 
 
+
+/* ===============ODIN================== */
+#odin{
+  position: relative;
+  top: +30px;
+  padding-bottom: 100px;
+}
+
+
+
+
+
  /* ===============================================venue===================================== */
  .book {
   position: relative;
+  top: -500px;
   left: +90px;
   border-radius: 10px;
   width: 250px;
@@ -1390,6 +1393,8 @@ input {
   flex-direction: column;
   width: 200px;
   background-color: white;
+  position: relative;
+  top: +550px;
 }
 
 .container label {
@@ -1565,11 +1570,6 @@ input {
 
 /* ========================LOADER============================== */
 
-
-
-/* REMASTERED */
-/* RTX-ON */
-/* completely redone toggle and droid */
 
 .bb8-toggle {
   --toggle-size: 16px;
@@ -2516,19 +2516,11 @@ input {
 
 
 
-/* ===============ODIN================== */
-#odin{
-  position: relative;
-  top: -40px;
-}
-
-
-
 /* Butterfly loader created by WerlynDev in Uiverse.io*/
 
 .loader {
-  top: +130px;
-  left: +120px;
+  top: -150px;
+  left: +70px;
   --sizeLoader: 60px;
   --sizeLoaderHalf: calc(var(--sizeLoader) / 2);
   --stepBtf: calc(var(--sizeLoader) / 10);
