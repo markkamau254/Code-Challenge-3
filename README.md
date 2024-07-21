@@ -2,7 +2,7 @@
 
 
 ## **Description** :
-This is a simple to-do list application built with HTML, CSS, and JavaScript. This application allows users to add, delete, and mark tasks as completed.
+This is a simple movie ticket booking application built with HTML, CSS, and JavaScript. This application allows users to search, view details and book cinema tickets for the movie.
 
 
 ## Project Breakdown
@@ -77,6 +77,7 @@ To use this repo, follow these steps:
 
   
 ## **You can check the deployed website by clicking the live link below** 👇 
-[Sopping List](  
-## **You can check the deployed website by clicking the live link below** 👇 
 [Sopping List](https://markkamau254.github.io/Code-Challenge-3/)
+
+##**Author**
+Mark Kamau
