@@ -508,7 +508,7 @@ nav{
 
 
 
-.container {
+#container {
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -518,13 +518,18 @@ nav{
   top: +15px;
 }
 
-.container .label {
+#container .label {
   font-size: 15px;
   padding-left: 20px;
   position: absolute;
-  top: 23px;
+  top: 13px;
   transition: 0.3s;
   pointer-events: none;
+}
+
+#movie-input{
+  position: relative;
+  left: +10px;
 }
 
 .input {
@@ -548,17 +553,19 @@ nav{
   -1px -1px 6px rgba(255, 255, 255, 0.4),
   inset 3px 3px 10px rgba(0,0,0,1),
   inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+  position: relative;
+  top: +6px;
 }
 
-.container .input:valid ~ .label,
-.container .input:focus ~ .label {
+#container .input:valid ~ .label,
+#container .input:focus ~ .label {
   transition: 0.3s;
   padding-left: 2px;
   transform: translateY(-35px);
 }
 
-.container .input:valid,
-.container .input:focus {
+#container .input:valid,
+#container .input:focus {
   box-shadow: 3px 3px 10px rgba(0,0,0,1),
   -1px -1px 6px rgba(255, 255, 255, 0.4),
   inset 3px 3px 10px rgba(0,0,0,1),
@@ -566,9 +573,7 @@ nav{
 }
 
 
-
-
-.search .container img{
+.search #container img{
     width: 30px;
     height: 30px;
     position: relative;
@@ -828,7 +833,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    
 }
 
 #bdy .box1{
@@ -838,8 +843,8 @@ body {
 
 .box1 img{
     width: 400px;
-    height: 250px;
-    padding: 15px 20px 0px 20px ;
+    height: 500px;
+    padding: 25px 30px 0px 30px ;
 }
 
 .boxcontent{
@@ -854,6 +859,7 @@ body {
 }
 
 #butt{
+  top: -25px;
     position: relative;
     padding: 15px 45px;
     background: #f1683a;
@@ -987,88 +993,14 @@ body {
 
 
 /* -------------------------------------------------------STARS--------------------------------------------- */
-/* .rating {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  position: relative;
-}
 
-.rating input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-}
-
-.rating label {
-  cursor: pointer;
-  font-size: 30px;
-  color: #666;
-}
-
-.rating label:before {
-  content: '★';
-}
-
-.rating input[type="radio"]:checked ~ label {
-  color: #ffa723;
-}
-
-.rating label:hover,
-.rating label:hover ~ label {
-  color: #ff9e0b;
-}
-
-.rating input[type="radio"]:checked + label:hover,
-.rating input[type="radio"]:checked + label:hover ~ label,
-.rating input[type="radio"]:checked ~ label:hover,
-.rating input[type="radio"]:checked ~ label:hover ~ label,
-.rating label:hover ~ input[type="radio"]:checked ~ label {
-  color: #e58e09;
-} */
 
 
 
 
 
 /* -------------------------------------------------------STAR 1--------------------------------------------- */
-/* .rating {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  position: relative;
-}
 
-.rating input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-}
-
-.rating label {
-  cursor: pointer;
-  font-size: 30px;
-  color: #666;
-}
-
-.rating label:before {
-  content: '★';
-}
-
-.rating input[type="radio"]:checked ~ label {
-  color: #ffa723;
-}
-
-.rating label:hover,
-.rating label:hover ~ label {
-  color: #ff9e0b;
-}
-
-.rating input[type="radio"]:checked + label:hover,
-.rating input[type="radio"]:checked + label:hover ~ label,
-.rating input[type="radio"]:checked ~ label:hover,
-.rating input[type="radio"]:checked ~ label:hover ~ label,
-.rating label:hover ~ input[type="radio"]:checked ~ label {
-  color: #e58e09;
-} */
 
 
 
@@ -1081,6 +1013,7 @@ body {
   flex-direction: row-reverse;
   justify-content: flex-end;
   position: relative;
+  top: -25px;
 }
 
 .rating input[type="radio"] {
@@ -1114,6 +1047,7 @@ body {
 .rating label:hover ~ input[type="radio"]:checked ~ label {
   color: #e58e09;
 }
+
 
   
   
@@ -1128,9 +1062,6 @@ body {
 }
 
 
-
-
-
 #secondlast{
     display: flex;
     padding-top: 50px;
@@ -1142,6 +1073,7 @@ hr{
     height: 1px;
 }
 
+
 #or{
     color: #000;
     font-size: 30px;
@@ -1150,8 +1082,6 @@ hr{
     position: relative;
     top: -20px;
 }
-
-
 
 
 
@@ -1537,17 +1467,17 @@ hr{
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 340px;
-  height: 190px;
+  width: 360px;
+  height: 440.5px;
   background-color: black;
-  color: white;
+  color: whitesmoke;
   text-align: center;
   border-radius: 5px;
   padding: 30px;
   position: absolute;
   z-index: 1;
-  bottom: 335%;
-  left: 243%;
+  bottom: 205%;
+  left: 198%;
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 3s;
@@ -1571,6 +1501,216 @@ hr{
 }
 
 
+
+#bdy {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap to the next line */
+  gap: 10px; /* Adjust gap between images as needed */
+  justify-content: center; /* Center the images horizontally */
+  max-width: 100%; /* Ensure container does not exceed 100% width of parent */
+  overflow: hidden; /* Hide overflow if any */
+}
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++tags+++++++++++++++++++++++++++++++++++++++++*/
+#tags{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.tag{
+  color: white;
+  padding: 10px 20px;
+  background-color: #f1683a;
+  border-radius: 50px;
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal; 
+}
+
+.tag.highlight{
+  background-color: #fcb786;
+}
+
+.no-results{
+ font-size: 100px;
+
+  /* font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100; */
+
+
+ font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+
+/* ==================================pagination=========================== */
+
+.pagination{
+  display:flex;
+  margin:20px 40px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.page{
+  padding:30px;
+  cursor:pointer;
+  font-size: 15px;
+}
+
+.page.disabled{
+  cursor:not-allowed;
+  color:grey;
+}
+
+.current{
+  padding: 15px 30px;
+  border-radius: 50%;
+  border: 7px solid #f76635;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.know-more{
+  background-color: #f1683a;
+  color:white;
+  font-size: 16px;
+  font-weight: bold;
+  border:0;
+  border-radius: 50px;
+  padding: 5px 15px;
+  margin-top: 5px;
+  position: relative;
+  left: +100px;
+  top: -30px;
+}
+
+
+
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 0%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 0px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+.embed.hide{
+    display: none;
+}
+
+.embed.show{
+    display: inline-block;
+}
+
+.arrow{
+    position: absolute;
+    font-size: 40px;
+}
+
+.arrow.left-arrow{
+    top:50%;
+    left:5%;
+    transform: translateY(-50%);
+}
+
+
+.arrow.right-arrow{
+  top:50%;
+  transform: translateY(-50%);
+  right:5%;
+}
+
+.dots{
+  margin-top: 30px;
+}
+
+.dots .dot {
+  padding: 8px 15px;
+  border-radius: 50%;
+  border: 5px solid aliceblue;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.dots .dot.active{
+  border-color: #f76635;
+}
 
 
 
