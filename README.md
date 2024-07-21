@@ -1,4 +1,4 @@
-# *Movie Ticket Booking usin HTML, CSS & JS*
+# *Movie Ticket Booking Website*
 
 
 ## **Description** :
