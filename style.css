@@ -59,6 +59,7 @@ header a{
 .carousel .list .item .author{
     font-weight: bold;
     letter-spacing: 10px;
+     padding-left: 10px;
 }
 .carousel .list .item .title,
 .carousel .list .item .topic{
